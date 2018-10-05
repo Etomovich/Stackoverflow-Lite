@@ -155,11 +155,43 @@ table {
 
 body {
     color: #888;
-    font: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
-/*Styling page logo */
+/*
+    =========================================
+            Grids
+    =========================================
+*/
+
+.column-1-3 {
+    width: 30%;
+}
+
+.column-2-3 {
+    width: 60%;
+}
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*
+    =========================================
+                Styling page logo 
+    =========================================
+*/
 
 .stack-logo {
     padding-bottom: 10px;
@@ -198,7 +230,7 @@ body {
     margin-right: 10px;
 }
 
-.btn {
+.search-btn {
     border-radius: 5px;
     display: inline-block;
     color: #648880;
@@ -207,13 +239,13 @@ body {
     letter-spacing: .5px;
 }
 
-.btn-alt {
+.search-btn-alt {
     border: 1px solid #fff;
     background: #FBEEC1;
     padding: 5px 10px;
 }
 
-.btn-alt:hover {
+.search-btn-alt:hover {
     background: #ccc;
     color: #648880;
 }
@@ -300,4 +332,134 @@ a {
 
 a:hover {
     color: #a9b2b9;
+}
+
+
+/*
+  ============================================
+                Home
+  ============================================
+*/
+
+.row {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.hero {
+    color: chocolate;
+    background: rgba(178, 126, 35, 0.3);
+    border-radius: 10px;
+    margin-left: 10px;
+    line-height: 44px;
+    padding: 33px 80px 66px 80px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.btn {
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.btn-alt {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+}
+
+.btn-alt:hover {
+    background: #fff;
+    color: #648880;
+}
+
+.btn-default {
+    border: 0;
+    background: rgba(178, 126, 35, 0.5);
+    padding: 11px 30px;
+    font-size: 14px;
+}
+
+.btn-default:hover {
+    background: #77a198;
+}
+
+
+/*
+  ============================================
+                Clearfix
+  ============================================    
+*/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+
+/*
+  ========================================
+  Register
+  ========================================
+*/
+
+form {
+    margin-bottom: 30px;
+}
+
+.section1 {
+    display: block;
+    float: left;
+}
+
+.section2 {
+    display: block;
+    float: right;
+    margin-right: 15px;
+}
+
+input {
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.register-group label {
+    color: #648880;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.register-group input {
+    border: 1px solid #c6c9cc;
+    border-radius: 5px;
+    color: #888;
+    display: block;
+    margin: 5px 0 3px 0;
+    padding: 5px 8px;
+}
+
+.register-group input {
+    width: 100%;
 }
